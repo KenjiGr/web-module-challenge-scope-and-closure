@@ -59,6 +59,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+    I closure happens when a variable is referenced outside of the function it was declared in.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -80,8 +81,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+    The variables dasRoll and zoesRoll are declared outside of the scope of the function. When they are called into the function that is the closure.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+    The number rolled will change because the function is invoked outside of the original functions' scope.
 c. What is the lexical scope of `newRoll`? 
+    The scope of newRoll is strictly in the returned function of personalDice. This means it cannot be referenced outside of the function that it was declared because it was never returned.
 
 
 ### Task 3 - Stretch Goals
